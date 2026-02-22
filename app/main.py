@@ -41,6 +41,9 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+from viv_auth import init_auth
+init_auth(app, engine, Base, get_db, app_name="Finance Pro")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

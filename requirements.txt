@@ -4,3 +4,5 @@ sqlalchemy
 psycopg2-binary
 pydantic
 python-multipart
+git+https://github.com/ooda-AI-GB/viv-auth.git
+jinja2
